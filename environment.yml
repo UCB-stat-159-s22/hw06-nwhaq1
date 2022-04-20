@@ -6,6 +6,5 @@ dependencies:
   - numpy=1.16
   - scipy=1.2
   - matplotlib=2.2
-  - h5py=2.10
-  - jupyter-book
+  - h5py=2.9
   
