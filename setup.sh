@@ -4,3 +4,5 @@ conda activate ligo
 
 # Install kernel for jupyter notebook
 python -m ipykernel install --user --name ligo --display-name "Python 2"
+
+pip install .
