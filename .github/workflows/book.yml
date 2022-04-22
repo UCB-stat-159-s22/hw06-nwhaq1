@@ -21,8 +21,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        source ~/srv/conda  
-        conda activate ligo
+        source /srv/conda  
+        conda env list
         pip install -r book-requirements.txt
     # Build the book
     - name: Build the book
