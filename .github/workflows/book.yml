@@ -21,6 +21,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        source ~/srv/conda  
         conda activate ligo
         pip install -r book-requirements.txt
     # Build the book
