@@ -37,7 +37,7 @@ jobs:
      # Build the book   
     - name: Build the book
       run: |
-        onda env create --file environment.yml -n ligo
+        conda env create --file environment.yml -n ligo
         conda activate ligo
         jupyter-book build .
     # Push the book's HTML to github-pages
