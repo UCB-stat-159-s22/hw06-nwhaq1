@@ -21,20 +21,19 @@ jobs:
 
     - name: Install dependencies
       run: |
+       pip install -r book-requirements.txt
         
-        pip install -r book-requirements.txt
-        
-      - name: Install conda environment
-        uses: conda-incubator/setup-miniconda@v1
-        with:
+    - name: Install conda environment
+      uses: conda-incubator/setup-miniconda@v1
+      with:
           activate-environment: ligo
           environment-file: environment.yml
           python-version: 2.7
 
-      - name: Execute all Notebooks
-        shell: bash -l {0}
-        run: |
-          conda activate ligo
+    - name: Execute all Notebooks
+      shell: bash -l {0}
+      run: |
+        conda activate ligo
         
         
     # # setup conda environment
