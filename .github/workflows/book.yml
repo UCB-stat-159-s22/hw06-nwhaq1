@@ -27,13 +27,14 @@ jobs:
         
     - name: Environment install
       run: |
-       ${CONDA}/bin/conda create -f environment.yml -n ligo # Breaks here on macOS
+       conda init
+       create -f environment.yml -p ~/envs/ligo
+       conda activate ligo
+       python -m ipykernel install --user --name ligo --display-name "Python 2"
+
        ${CONDA}/bin/conda info
 
-    - name: Install dependencies
-      run: |
-          source ${CONDA}/bin/activate ligo
-          conda env list
+   
         
         
     # # setup conda environment
