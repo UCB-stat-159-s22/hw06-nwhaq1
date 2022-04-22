@@ -29,8 +29,7 @@ jobs:
         
     - name: Environment install
       run: |
-       conda init
-       conda update -n base -c defaults conda
+       conda init bash
        conda env create -f environment.yml 
        conda activate ligo
        python -m ipykernel install --user --name ligo --display-name "Python 2"
