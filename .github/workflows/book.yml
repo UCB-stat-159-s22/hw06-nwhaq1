@@ -27,10 +27,12 @@ jobs:
     - name: Setup Conda dependencies
       uses: goanpeca/setup-miniconda@v1
       with:
-        activate-environment: lab
+        activate-environment: ligo
         environment-file: environment.yml
         python-version: 2.7
         auto-activate-base: false
+      run: |
+          conda activate ligo
      # Build the book   
     - name: Build the book
       run: |
