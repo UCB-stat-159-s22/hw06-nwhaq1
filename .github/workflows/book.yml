@@ -38,7 +38,6 @@ jobs:
     - name: Build the book
       run: |
         conda env create --file environment.yml -n ligo
-        source activate ligo
         jupyter-book build .
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
