@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name : run script file
+      run: setup.sh
+      shell: bash 
 
 
     # Install dependencies
@@ -24,6 +27,16 @@ jobs:
       run: |
        pip install -r book-requirements.txt
         
+        
+#     - name: Environment install
+#       run: |
+#        conda init
+#        conda update -n base -c defaults conda
+#        conda env create -f environment.yml -p ~/envs/ligo
+#        conda activate ligo
+#        python -m ipykernel install --user --name ligo --display-name "Python 2"
+
+#        ${CONDA}/bin/conda info
         
     - name: Environment install
       run: |
