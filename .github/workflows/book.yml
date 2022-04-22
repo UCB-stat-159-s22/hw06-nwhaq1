@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name : run script file
-      run: setup.sh
+      run: bash setup.sh
       shell: bash 
 
 
