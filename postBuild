@@ -3,3 +3,7 @@ set -e
 pip install .
 
 pip install jupyter-book
+
+
+
+
