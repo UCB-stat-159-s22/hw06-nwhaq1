@@ -2,10 +2,12 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 
-root: intro
+ 
+ 
+ 
 format: jb-book
-numbered: true
-- part: Get started
-    chapters:
-    - file: markdown
-    - file: notebooks
+root: intro
+
+chapters:
+  - file: markdown
+  - file: notebooks
