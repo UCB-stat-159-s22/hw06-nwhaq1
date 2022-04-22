@@ -21,7 +21,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        env create -f environment.yml -p ~/envs/ligo
+        conda activate ligo
         pip install -r book-requirements.txt
     # Build the book
     - name: Build the book
