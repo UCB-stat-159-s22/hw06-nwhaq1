@@ -9,7 +9,7 @@ env:
 
 .PHONY: html
 html :
-	jupyter-book build .
+	cd mynewbook && jupyter-book build .
     
 # build the JupyterBook so that you can view it on the hub with the URL proxy trick as indicated above.
 
