@@ -12,11 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: conda-incubator/setup-miniconda@v2
-      with:
-        environment-file: environment.yml
-        activate-environment: test
-        auto-activate-base: false
+   
         
     - run: conda info
 
@@ -28,6 +24,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        conda create -n ligo
         pip install -r book-requirements.txt
     # Build the book
     - name: Build the book
