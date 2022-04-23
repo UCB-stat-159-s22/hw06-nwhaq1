@@ -23,12 +23,12 @@ jobs:
       run: |
        pip install -r book-requirements.txt
           
-    # - name: Install Conda Environment
-    #   run: |
-    #    conda init bash
-    #    conda env create -f environment.yml 
-    #    conda activate ligo
-    #    python -m ipykernel install --user --name ligo --display-name "Python 2"
+    - name: Install Conda Environment
+      run: |
+       conda init bash
+       conda env create -f environment.yml 
+       conda activate ligo
+       python -m ipykernel install --user --name ligo --display-name "Python 2"
    
         
         
