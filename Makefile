@@ -1,9 +1,14 @@
+SHELL=/bin/bash
+
 # creates and configures the conda environment.
 
 .PHONY: env
-env:
+env:   
 	bash -i setup.sh
-	pip install .
+
+
+
+
 
 # build the JupyterBook normally (calling jupyterbook build .). Note this build can only be viewed if the repo is cloned locally, # or with the VNC desktop on the hub.
 
