@@ -5,5 +5,5 @@ format: jb-book
 root: index.md
 chapters:
 - file: hw06-description
-- file: hw06_index.ipynb
+- file: hw06-index.ipynb
 
