@@ -2,9 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: index.md
 chapters:
-- file: index
 - file: hw06-description
-- file: README
+- file: hw06_index.ipynb
 
