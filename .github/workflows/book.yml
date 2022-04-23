@@ -23,25 +23,6 @@ jobs:
       run: |
        pip install -r book-requirements.txt
           
-    # - name: Install Conda Environment
-    #   run: |
-    #    conda init bash
-    #    conda env create -f environment.yml 
-    #    conda activate ligo
-    #    python -m ipykernel install --user --name ligo --display-name "Python 2"
-   
-        
-        
-    # # setup conda environment
-    # - name: Setup Conda dependencies
-    #   uses: goanpeca/setup-miniconda@v1
-    #   with:
-    #     activate-environment: ligo
-    #     environment-file: environment.yml
-    #     python-version: 2.7
-    #     auto-activate-base: false
-     
-          
      # Build the book   
     - name: Build the book
       run: |
