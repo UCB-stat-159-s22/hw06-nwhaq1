@@ -9,15 +9,15 @@ env:
 
 .PHONY: html
 html :
-	cd mynewbook && jupyter-book build .
+	jupyter-book build .
     
 # build the JupyterBook so that you can view it on the hub with the URL proxy trick as indicated above.
 
 .PHONY: html-hub
 html-hub:
-	jupyter-book config sphinx mynewbook
-	cd mynewbook && sphinx-build  . _build/html -D html_baseurl=${JUPYTERHUB_SERVICE_PREFIX}/proxy/absolute/8000
-	cd mynewbook/_build/html && python -m http.server
+	jupyter-book config sphinx .
+	sphinx-build  . _build/html -D html_baseurl=${JUPYTERHUB_SERVICE_PREFIX}/proxy/absolute/8000
+	cd _build/html && python -m http.server
  
 
 # build the JupyterBook so that you can view it on the hub with the URL proxy trick as indicated above.
